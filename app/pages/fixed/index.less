@@ -1,0 +1,37 @@
+@import "../../mods/base.less";
+
+
+@h: 50px;
+.input-any{
+	background: #eee;
+	outline: none;
+	width: 100%;
+	height: @h;
+	border: 1px solid #000;
+	box-sizing: border-box;
+}
+.content{
+	background: linear-gradient(145deg, #fff, #530abb, #000);
+	height: 2000px;
+}
+
+
+.bad{
+	padding-top: @h;
+
+	.input-any{
+		position: fixed;
+		top: 0;
+	}
+}
+
+.good{
+
+	.content-wrap{
+		overflow: scroll;
+		width: 100%;
+		position: absolute;
+		top: @h;
+		bottom: 0;
+	}
+}

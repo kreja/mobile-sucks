@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>输入框 fixed 错位</title>
+    <meta name="description" content="详细解释 https://github.com/kreja/mobile-sucks/issues/1">
+    <meta name='viewport', content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="/fixed/index.css">
+</head>
+<body>
+
+	<div class="bad">
+		<input class="input-any" type="text" />
+
+		<div class="content">
+			<p>1</p>
+			<p>2</p>
+		</div>
+	</div>
+	
+	<div class="good">
+		<input class="input-any" type="text" />
+
+		<div class="content-wrap">
+			<div class="content">
+				<p>1</p>
+				<p>2</p>
+			</div>
+		</div>
+	</div>
+
+    <script src="/vendor.js"></script>
+    <script src="/fixed/index.js"></script>
+</body>
+</html>
